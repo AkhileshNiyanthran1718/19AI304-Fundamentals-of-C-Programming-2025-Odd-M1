@@ -86,7 +86,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+'''
+#include <stdio.h>
+
+#define PI 3.14159 // Macro constant
+
+int main() { const int DAYS = 7; // Constant variable
+
+printf("Value of PI (macro constant): %.5f\n", PI);
+printf("Value of DAYS (constant variable): %d\n", DAYS);
+
+return 0;
+}
+'''
 # Output:
+<img width="1632" height="678" alt="m1-2" src="https://github.com/user-attachments/assets/ebf195a1-3d61-4da5-a9aa-73c21fe46b6a" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -110,7 +125,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+'''
+#include <stdio.h>
+
+int main() { int num = 25; float f = 3.5f; double d = 98.765432; char ch = 'C';
+
+printf("Integer value: %d\n", num);
+printf("Float value: %.2f\n", f);
+printf("Double value: %.6lf\n", d);
+printf("Character value: %c\n", ch);
+
+return 0;
+}
+'''
 # Output:
+<img width="1533" height="599" alt="m1-3" src="https://github.com/user-attachments/assets/65ec00e7-f5d0-4ab7-a69a-1b7f3f926a17" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -149,7 +179,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+'''
+#include <stdio.h>
+
+int main() { int num = 25; float f = 3.5f; double d = 98.765432; char ch = 'C';
+
+printf("Integer value: %d\n", num);
+printf("Float value: %.2f\n", f);
+printf("Double value: %.6lf\n", d);
+printf("Character value: %c\n", ch);
+
+return 0;
+}
+'''
 # Output:
+<img width="1525" height="697" alt="m1-4" src="https://github.com/user-attachments/assets/5bbe1c93-e640-4e93-b33d-abf3976bee75" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -194,7 +239,34 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+'''
+#include <stdio.h>
+
+int main() { char ch;
+
+printf("Enter a character: ");
+scanf("%c", &ch);
+
+/* Check for digit */
+(ch >= '0' && ch <= '9') ?
+    printf("Digit") :
+
+/* Check for alphabet */
+((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+    ((ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+      ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') ?
+        printf("Vowel") :
+        printf("Consonant")) :
+
+/* Otherwise */
+printf("Special Symbol");
+
+return 0;
+}
+'''
 # Output:
+<img width="1626" height="637" alt="m1-5" src="https://github.com/user-attachments/assets/6345088b-5dd9-4add-9661-021d97730ef5" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
